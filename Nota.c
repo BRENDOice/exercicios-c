@@ -20,9 +20,14 @@ int main() {
 
         if (media >= 7.0) {
             printf(" , Aluno Aprovado\n");
-        } else {
+        }
+        else if (media >= 6.0) {
+            printf(" , Aluno em Recuperacao\n");
+        } 
+        else {
             printf(" , Aluno Reprovado\n");
         }
+    
     } // O programa volta para o topo do FOR até completar as 3 repetições
 
     return 0;
