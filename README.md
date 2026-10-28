@@ -1,39 +1,30 @@
-# Sistema de Triagem e Consulta para Alistamento Militar
+# 🚀 Exercícios em C & Agente GitDoc AI
 
-## 📝 Descrição Geral
-O **Sistema de Triagem e Consulta para Alistamento Militar** é uma aplicação em linha de comando (CLI) desenvolvida em linguagem C. O projeto simula o atendimento preliminar ao cidadão brasileiro interessado em serviços militares, aplicando regras de negócio baseadas em faixa etária para direcionar o usuário aos fluxos adequados: prosseguimento para acompanhamento e opções de alistamento (maiores de 18 anos), aguardo de janela de liberação (17 anos) ou bloqueio por inelegibilidade temporária (menores de 17 anos).
+[![Linguagem C](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white)](https://en.cppreference.com/w/c)
+[![Google AI Studio](https://img.shields.io/badge/AI%20Engine-Google%20AI%20Studio-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://aistudio.google.com/)
+[![Git](https://img.shields.io/badge/VCS-Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 
-## 🚀 Tecnologias Utilizadas
-- **Linguagem de Programação:** C (compatível com padrões C99/C11/C17).
-- **Bibliotecas Padrão:** `<stdio.h>` (operações de entrada/saída).
-- **Compiladores Homologados:** GCC (GNU Compiler Collection), Clang, MSVC.
-- **Estruturas de Dados:** Tipos primitivos inteiros (`int`) e vetores contíguos de caracteres (`char[]` / strings estáticas).
+Repositório dedicado ao estudo e desenvolvimento de software em **Linguagem C**, englobando desde a implementação de sistemas estruturados até a automação de documentação técnica via **Engenharia de Prompt Avançada** no **Google AI Studio**.
 
-## ⚙️ Funcionalidades Principais
-- **Controle de Sessão Inicial:** Confirmação explícita de interesse do usuário antes de iniciar a coleta de dados cadastrais.
-- **Validação de Entrada de Controle:** Interrupção segura do fluxo caso a opção inicial receba um valor não numérico.
-- **Captura de Dados Pessoais:** Coleta do prenome e idade do cidadão.
-- **Validação de Regra de Negócio Etária:**
-  - **Maior ou igual a 18 anos:** Acesso concedido ao menu de serviços.
-  - **Exatamente 17 anos:** Notificação de prontidão para futuro alistamento.
-  - **Abaixo de 17 anos:** Notificação de indisponibilidade por idade insuficiente.
-- **Menu de Serviços Específicos (≥ 18 anos):**
-  - Opção 1: Acompanhamento de Alistamento Militar.
-  - Opção 2: Acompanhamento de Certificado de Dispensa de Incorporação (CDI).
-  - Opção 3: Alistamento Feminino.
-  - Tratamento de exceção para opções fora da faixa prevista (`default`).
+---
 
-## 📋 Pré-requisitos
-Para compilar e executar o projeto, você precisará de:
-- Compilador C instalado no ambiente (ex: **GCC** no Linux/Windows via MinGW/WSL ou **Clang** no macOS/Linux).
-- Terminal de linha de comando (Bash, Zsh, PowerShell ou CMD).
+## 🤖 Agente GitDoc AI
 
-## 🔧 Como Compilar e Executar
+A documentação e a análise de arquitetura deste repositório contam com o apoio do **GitDoc AI**, um agente de Inteligência Artificial customizado via *System Instructions*.
 
-1. **Clone ou salve o arquivo:**
-   Certifique-se de salvar o código em um arquivo denominado `main.c`.
+* **Análise Estática de Código:** Mapeamento do ciclo de vida de variáveis na *Call Stack* e *Heap*.
+* **Segurança da Informação:** Validação contra vulnerabilidades de estouro de memória (*Buffer Overflow*) e conformidade com diretrizes da LGPD.
+* **Padronização:** Verificação de boas práticas de compilação e estruturação de código legível.
 
-2. **Compilação:**
-   Execute o compilador C com flags recomendadas para segurança e boas práticas:
-   ```bash
-   gcc -Wall -Wextra -pedantic main.c -o alistamento
+---
+
+## 📁 Estrutura do Repositório
+
+```text
+exercicios-c/
+├── src/
+│   ├── alistamento.c      # Sistema de Alistamento Militar em C
+│   └── notas.c            # Calculadora de Média Acadêmica
+├── docs/
+│   └── gitdoc_prompt.txt  # System Instructions do Agente GitDoc AI
+└── README.md              # Documentação Principal
